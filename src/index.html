@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/index.scss" type="text/css" />
     <title>TO-DO LIST</title>
   </head>
   <body>
@@ -11,8 +16,20 @@
     </header>
     <form>
       <input type="text" class="input" />
-      <button class="button" type="submit">Add to List</button>
+      <button class="list-button" type="submit">
+        <i class="fa fa-arrow-circle-down"></i>
+      </button>
     </form>
+    <div class="list-box">
+      <ul class="list-itself">
+        <div class="todo">
+          <li></li>
+          <button>Delete</button>
+          <button>Checked</button>
+        </div>
+      </ul>
+    </div>
+
     <script src="./js/index.js"></script>
   </body>
 </html>

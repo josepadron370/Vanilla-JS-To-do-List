@@ -10,3 +10,20 @@
 // };
 
 document.body.style.backgroundColor = "lightblue";
+
+// SELECTORS!!!
+
+const listInput = document.querySelector("#input");
+const listButton = document.querySelector("#list-button");
+const listBox = document.querySelector("#list-box");
+
+// EVENT LISTENERS!!!
+
+listButton.addEventListener("click", addTodo);
+
+// FUNCTIONS!!!
+
+function addTodo(event) {
+  event.preventDefault();
+  console.log("Hello!!!");
+}
